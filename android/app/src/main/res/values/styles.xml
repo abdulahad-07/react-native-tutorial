@@ -4,6 +4,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:editTextBackground">@layout/launch_screen</item>
+        <item name="android:windowDisablePreview">true</item>
     </style>
 
 </resources>
