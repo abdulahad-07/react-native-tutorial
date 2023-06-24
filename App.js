@@ -20,6 +20,7 @@ import {SafeAreaView} from 'react-native';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
 import SplashScreen from 'react-native-splash-screen';
 import IMAGES from './src/assets/images';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const App = () => {
   useEffect(() => {
@@ -111,8 +112,11 @@ const App = () => {
                 borderRadius: 25,
                 backgroundColor: 'lightgray',
                 marginEnd: 10,
-              }}
-            />
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Icon name="arrow-back" size={30} color="#FFF" />
+            </View>
           </TouchableWithoutFeedback>
           <TouchableWithoutFeedback
             onPress={() => {
@@ -124,8 +128,11 @@ const App = () => {
                 width: 50,
                 borderRadius: 25,
                 backgroundColor: 'orange',
-              }}
-            />
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <Icon name="arrow-forward" size={30} color="#FFF" />
+            </View>
           </TouchableWithoutFeedback>
         </View>
       </View>
