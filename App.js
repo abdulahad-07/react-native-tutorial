@@ -21,6 +21,7 @@ import Carousel, {Pagination} from 'react-native-snap-carousel';
 import SplashScreen from 'react-native-splash-screen';
 import IMAGES from './src/assets/images';
 import Icon from 'react-native-vector-icons/Ionicons';
+import {FONTS} from './src/constants';
 
 const App = () => {
   useEffect(() => {
@@ -65,8 +66,17 @@ const App = () => {
           }}
         />
         <View style={{padding: 15}}>
-          <Text style={{fontSize: 18, fontWeight: '700'}}>{item.title}</Text>
-          <Text style={{marginTop: 20, fontSize: 16}}>{item.description}</Text>
+          <Text style={{fontSize: 18, fontFamily: FONTS.MONTSERRAT_BOLD}}>
+            {item.title}
+          </Text>
+          <Text
+            style={{
+              marginTop: 20,
+              fontSize: 16,
+              fontFamily: FONTS.MONTSERRAT,
+            }}>
+            {item.description}
+          </Text>
         </View>
       </View>
     );
