@@ -30,6 +30,8 @@
 		547CE8B52A470F34002D7499 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 547CE8A52A470F33002D7499 /* MaterialIcons.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-tutorial-tutorialTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-tutorial-tutorialTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		368B67F7B5C245CA96DB47BC /* MontserratRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66EDC426FA334144AFC87F83 /* MontserratRegular.ttf */; };
+		76F41F92F9F948A7B03471B5 /* MontserratBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89BBDCC2297C456C91E1E120 /* MontserratBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = tutorial/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-tutorial-tutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tutorial-tutorialTests.release.xcconfig"; path = "Target Support Files/Pods-tutorial-tutorialTests/Pods-tutorial-tutorialTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		66EDC426FA334144AFC87F83 /* MontserratRegular.ttf */ = {isa = PBXFileReference; name = "MontserratRegular.ttf"; path = "../src/assets/fonts/MontserratRegular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		89BBDCC2297C456C91E1E120 /* MontserratBold.ttf */ = {isa = PBXFileReference; name = "MontserratBold.ttf"; path = "../src/assets/fonts/MontserratBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				259E0DDD79994B88906B30E0 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -204,6 +209,16 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		259E0DDD79994B88906B30E0 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				66EDC426FA334144AFC87F83 /* MontserratRegular.ttf */,
+				89BBDCC2297C456C91E1E120 /* MontserratBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -315,6 +330,8 @@
 				547CE8AF2A470F34002D7499 /* FontAwesome5_Solid.ttf in Resources */,
 				547CE8AB2A470F34002D7499 /* MaterialCommunityIcons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				368B67F7B5C245CA96DB47BC /* MontserratRegular.ttf in Resources */,
+				76F41F92F9F948A7B03471B5 /* MontserratBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
