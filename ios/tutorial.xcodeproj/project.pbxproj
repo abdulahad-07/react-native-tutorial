@@ -12,6 +12,7 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		368B67F7B5C245CA96DB47BC /* MontserratRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66EDC426FA334144AFC87F83 /* MontserratRegular.ttf */; };
 		547CE8A62A470F34002D7499 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 547CE8962A470F33002D7499 /* Fontisto.ttf */; };
 		547CE8A72A470F34002D7499 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 547CE8972A470F33002D7499 /* Octicons.ttf */; };
 		547CE8A82A470F34002D7499 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 547CE8982A470F33002D7499 /* Feather.ttf */; };
@@ -29,9 +30,8 @@
 		547CE8B42A470F34002D7499 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 547CE8A42A470F33002D7499 /* SimpleLineIcons.ttf */; };
 		547CE8B52A470F34002D7499 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 547CE8A52A470F33002D7499 /* MaterialIcons.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-tutorial-tutorialTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-tutorial-tutorialTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		368B67F7B5C245CA96DB47BC /* MontserratRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66EDC426FA334144AFC87F83 /* MontserratRegular.ttf */; };
 		76F41F92F9F948A7B03471B5 /* MontserratBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89BBDCC2297C456C91E1E120 /* MontserratBold.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,11 +75,11 @@
 		5709B34CF0A7D63546082F79 /* Pods-tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tutorial.release.xcconfig"; path = "Target Support Files/Pods-tutorial/Pods-tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-tutorial-tutorialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tutorial-tutorialTests.debug.xcconfig"; path = "Target Support Files/Pods-tutorial-tutorialTests/Pods-tutorial-tutorialTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-tutorial.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tutorial.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66EDC426FA334144AFC87F83 /* MontserratRegular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MontserratRegular.ttf; path = ../src/assets/fonts/MontserratRegular.ttf; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = tutorial/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89BBDCC2297C456C91E1E120 /* MontserratBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MontserratBold.ttf; path = ../src/assets/fonts/MontserratBold.ttf; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-tutorial-tutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tutorial-tutorialTests.release.xcconfig"; path = "Target Support Files/Pods-tutorial-tutorialTests/Pods-tutorial-tutorialTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		66EDC426FA334144AFC87F83 /* MontserratRegular.ttf */ = {isa = PBXFileReference; name = "MontserratRegular.ttf"; path = "../src/assets/fonts/MontserratRegular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		89BBDCC2297C456C91E1E120 /* MontserratBold.ttf */ = {isa = PBXFileReference; name = "MontserratBold.ttf"; path = "../src/assets/fonts/MontserratBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +130,15 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = tutorial;
+			sourceTree = "<group>";
+		};
+		259E0DDD79994B88906B30E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66EDC426FA334144AFC87F83 /* MontserratRegular.ttf */,
+				89BBDCC2297C456C91E1E120 /* MontserratBold.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -210,16 +219,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		259E0DDD79994B88906B30E0 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				66EDC426FA334144AFC87F83 /* MontserratRegular.ttf */,
-				89BBDCC2297C456C91E1E120 /* MontserratBold.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,6 +231,7 @@
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
 				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				E12177EF2210D07B01C5E63C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -432,6 +432,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tutorial-tutorialTests/Pods-tutorial-tutorialTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E12177EF2210D07B01C5E63C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tutorial-tutorialTests/Pods-tutorial-tutorialTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tutorial-tutorialTests/Pods-tutorial-tutorialTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tutorial-tutorialTests/Pods-tutorial-tutorialTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
