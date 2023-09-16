@@ -2,6 +2,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import SCREENS from '../screens';
 import IntroScreen from '../screens/intro/IntroScreen';
 import LoginScreen from '../screens/auth/LoginScreen';
+import SignupScreen from '../screens/auth/SignupScreen';
 
 const Stack = createStackNavigator();
 
@@ -13,7 +14,16 @@ const StackNavigation = () => {
         component={IntroScreen}
         options={{headerShown: false}}
       />
-      <Stack.Screen name={SCREENS.LOGIN} component={LoginScreen} />
+      <Stack.Screen
+        name={SCREENS.LOGIN}
+        component={LoginScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name={SCREENS.SIGNUP}
+        component={SignupScreen}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 };

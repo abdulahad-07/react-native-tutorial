@@ -3,12 +3,13 @@ import React, {useEffect} from 'react';
 import {Platform} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import StackNavigation from './src/navigation';
+import {COLORS} from './src/constants';
 
 const MyTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    background: '#FFF',
+    background: COLORS.BG,
   },
 };
 

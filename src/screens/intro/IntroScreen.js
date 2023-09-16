@@ -10,7 +10,7 @@ import {
 import React, {useRef, useState} from 'react';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
 import IMAGES from '../../assets/images';
-import {FONTS} from '../../constants';
+import {COLORS, FONTS} from '../../constants';
 import Icon from 'react-native-vector-icons/Ionicons';
 import SCREENS from '..';
 
@@ -96,7 +96,7 @@ const IntroScreen = props => {
           dotsLength={3}
           dotStyle={{
             width: 15,
-            backgroundColor: 'orange',
+            backgroundColor: COLORS.ORANGE,
           }}
           inactiveDotStyle={{
             width: 10,
@@ -114,7 +114,7 @@ const IntroScreen = props => {
                 height: 50,
                 width: 50,
                 borderRadius: 25,
-                backgroundColor: 'lightgray',
+                backgroundColor: COLORS.GRAY_LIGHT,
                 marginEnd: 10,
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -125,13 +125,16 @@ const IntroScreen = props => {
           <TouchableWithoutFeedback
             onPress={() => {
               _carousel.current.snapToItem(activeDotIndex + 1);
+              if (activeDotIndex === data.length - 1) {
+                navigation.navigate(SCREENS.LOGIN);
+              }
             }}>
             <View
               style={{
                 height: 50,
                 width: 50,
                 borderRadius: 25,
-                backgroundColor: 'orange',
+                backgroundColor: COLORS.ORANGE,
                 justifyContent: 'center',
                 alignItems: 'center',
               }}>
