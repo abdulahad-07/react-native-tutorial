@@ -44,6 +44,8 @@
 		<string>Fontisto.ttf</string>
 		<string>MontserratRegular.ttf</string>
 		<string>MontserratBold.ttf</string>
+		<string>MontserratMedium.ttf</string>
+		<string>MontserratSemiBold.ttf</string>
 	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
