@@ -5,6 +5,10 @@ const IMAGES = {
   FACEBOOK: require('./facebook.png'),
   GOOGLE: require('./google.png'),
   APPLE: require('./apple.png'),
+  HOME: require('./home.png'),
+  ORDERS: require('./orders.png'),
+  PROFILE: require('./user.png'),
+  WISHLIST: require('./wishlist.png'),
 };
 
 export default IMAGES;
