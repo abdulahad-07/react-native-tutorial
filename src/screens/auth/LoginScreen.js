@@ -76,7 +76,10 @@ const LoginScreen = props => {
         }}>
         Forgot Password?
       </Text>
-      <TouchableWithoutFeedback>
+      <TouchableWithoutFeedback
+        onPress={() => {
+          navigation.navigate(SCREENS.HOME);
+        }}>
         <View
           style={{
             height: 50,
