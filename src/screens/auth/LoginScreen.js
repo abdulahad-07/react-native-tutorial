@@ -5,22 +5,39 @@ import {
   View,
   TouchableWithoutFeedback,
   Image,
+  Switch,
 } from 'react-native';
-import React from 'react';
+import React, {useContext} from 'react';
 import {COLORS, FONTS} from '../../constants';
 import IMAGES from '../../assets/images';
 import SCREENS from '..';
+import {AppContext} from '../../theme/AppContext';
+import {useTheme} from '@react-navigation/native';
 
 const LoginScreen = props => {
   const {navigation} = props;
+
+  const {isDarkTheme, setIsDarkTheme} = useContext(AppContext);
+
+  const {colors} = useTheme();
+
   return (
     <SafeAreaView style={{marginHorizontal: 30}}>
+      <View>
+        <Switch
+          value={isDarkTheme}
+          onChange={() => {
+            setIsDarkTheme(prev => !prev);
+          }}
+        />
+      </View>
       <Text
         style={{
           marginTop: 100,
           textAlign: 'center',
           fontFamily: FONTS.MONTSERRAT_BOLD,
           fontSize: 24,
+          color: colors.text,
         }}>
         Hello Again!
       </Text>
@@ -31,6 +48,7 @@ const LoginScreen = props => {
           fontSize: 20,
           marginTop: 20,
           marginHorizontal: 70,
+          color: colors.text,
         }}>
         Welcome back you've been missed!
       </Text>
@@ -73,6 +91,7 @@ const LoginScreen = props => {
           fontFamily: FONTS.MONTSERRAT,
           textAlign: 'right',
           marginTop: 20,
+          color: colors.text,
         }}>
         Forgot Password?
       </Text>
@@ -109,7 +128,12 @@ const LoginScreen = props => {
           style={{flex: 0.5, height: 2, backgroundColor: COLORS.GRAY_LIGHT}}
         />
         <Text
-          style={{flex: 1, textAlign: 'center', fontFamily: FONTS.MONTSERRAT}}>
+          style={{
+            flex: 1,
+            textAlign: 'center',
+            fontFamily: FONTS.MONTSERRAT,
+            color: colors.text,
+          }}>
           Or continue with
         </Text>
         <View
@@ -160,7 +184,9 @@ const LoginScreen = props => {
         </View>
       </View>
       <View style={{flexDirection: 'row', justifyContent: 'center'}}>
-        <Text style={{fontFamily: FONTS.MONTSERRAT_MEDIUM}}>Not a member?</Text>
+        <Text style={{fontFamily: FONTS.MONTSERRAT_MEDIUM, color: colors.text}}>
+          Not a member?
+        </Text>
         <TouchableWithoutFeedback
           onPress={() => navigation.navigate(SCREENS.SIGNUP)}>
           <Text

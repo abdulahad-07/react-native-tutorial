@@ -11,6 +11,7 @@ import WishlistScreen from '../screens/tabs/WishlistScreen';
 import OrdersScreen from '../screens/tabs/OrdersScreen';
 import ProfileScreen from '../screens/tabs/ProfileScreen';
 import {COLORS} from '../constants';
+import {useTheme} from '@react-navigation/native';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -43,8 +44,12 @@ const StackNavigation = () => {
 };
 
 const TabNavigator = () => {
+  const {colors} = useTheme();
+
   return (
-    <Tab.Navigator initialRouteName={SCREENS.HOME}>
+    <Tab.Navigator
+      initialRouteName={SCREENS.HOME}
+      screenOptions={{tabBarStyle: {backgroundColor: colors.tabbarBackground}}}>
       <Tab.Screen
         name={SCREENS.HOME}
         component={HomeScreen}
@@ -56,12 +61,14 @@ const TabNavigator = () => {
               style={{
                 height: 30,
                 width: 30,
-                tintColor: focused ? COLORS.ORANGE : COLORS.BLACK,
+                tintColor: focused
+                  ? colors.tabbarActiveColor
+                  : colors.tabbarInactiveColor,
               }}
             />
           ),
-          tabBarActiveTintColor: COLORS.ORANGE,
-          tabBarInactiveTintColor: COLORS.BLACK,
+          tabBarActiveTintColor: colors.tabbarActiveColor,
+          tabBarInactiveTintColor: colors.tabbarInactiveColor,
         }}
       />
       <Tab.Screen
@@ -75,12 +82,14 @@ const TabNavigator = () => {
               style={{
                 height: 30,
                 width: 30,
-                tintColor: focused ? COLORS.ORANGE : COLORS.BLACK,
+                tintColor: focused
+                  ? colors.tabbarActiveColor
+                  : colors.tabbarInactiveColor,
               }}
             />
           ),
-          tabBarActiveTintColor: COLORS.ORANGE,
-          tabBarInactiveTintColor: COLORS.BLACK,
+          tabBarActiveTintColor: colors.tabbarActiveColor,
+          tabBarInactiveTintColor: colors.tabbarInactiveColor,
         }}
       />
       <Tab.Screen
@@ -94,12 +103,14 @@ const TabNavigator = () => {
               style={{
                 height: 30,
                 width: 30,
-                tintColor: focused ? COLORS.ORANGE : COLORS.BLACK,
+                tintColor: focused
+                  ? colors.tabbarActiveColor
+                  : colors.tabbarInactiveColor,
               }}
             />
           ),
-          tabBarActiveTintColor: COLORS.ORANGE,
-          tabBarInactiveTintColor: COLORS.BLACK,
+          tabBarActiveTintColor: colors.tabbarActiveColor,
+          tabBarInactiveTintColor: colors.tabbarInactiveColor,
         }}
       />
       <Tab.Screen
@@ -113,12 +124,14 @@ const TabNavigator = () => {
               style={{
                 height: 30,
                 width: 30,
-                tintColor: focused ? COLORS.ORANGE : COLORS.BLACK,
+                tintColor: focused
+                  ? colors.tabbarActiveColor
+                  : colors.tabbarInactiveColor,
               }}
             />
           ),
-          tabBarActiveTintColor: COLORS.ORANGE,
-          tabBarInactiveTintColor: COLORS.BLACK,
+          tabBarActiveTintColor: colors.tabbarActiveColor,
+          tabBarInactiveTintColor: colors.tabbarInactiveColor,
         }}
       />
     </Tab.Navigator>
