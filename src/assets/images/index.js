@@ -9,6 +9,7 @@ const IMAGES = {
   ORDERS: require('./orders.png'),
   PROFILE: require('./user.png'),
   WISHLIST: require('./wishlist.png'),
+  LOGO: require('./logo.png'),
 };
 
 export default IMAGES;

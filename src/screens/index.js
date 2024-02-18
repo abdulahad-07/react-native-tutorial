@@ -1,4 +1,5 @@
 const SCREENS = {
+  ABOUT: 'ABOUT',
   INTRO: 'INTRO',
   LOGIN: 'LOGIN',
   SIGNUP: 'SIGNUP',
