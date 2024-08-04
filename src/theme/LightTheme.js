@@ -6,6 +6,7 @@ const LightTheme = {
     tabbarBackground: '#FFF',
     tabbarActiveColor: 'orange',
     tabbarInactiveColor: '#000',
+    separator: '#A5A5A5',
   },
 };
 
