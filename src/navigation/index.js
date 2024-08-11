@@ -18,6 +18,8 @@ import ProfileScreen from '../screens/tabs/ProfileScreen';
 import {useTheme} from '@react-navigation/native';
 import AboutScreen from '../screens/tabs/AboutScreen';
 import {COLORS} from '../constants';
+import SettingScreen from '../screens/tabs/SettingScreen';
+import LanguageScreen from '../screens/language/LanguageScreen';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -45,6 +47,11 @@ const StackNavigation = () => {
         name={SCREENS.HOME}
         component={TabNavigator}
         options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name={SCREENS.LANGUAGE}
+        component={LanguageScreen}
+        options={{headerBackTitleVisible: false}}
       />
     </Stack.Navigator>
   );
@@ -80,6 +87,17 @@ const ProfileScreenWithDrawer = () => {
               activeTintColor={COLORS.WHITE}
             />
             <DrawerItem
+              label={'Settings'}
+              onPress={() => {
+                props.navigation.navigate(SCREENS.SETTING);
+              }}
+              focused={focused === SCREENS.SETTING}
+              activeBackgroundColor={COLORS.ORANGE}
+              inactiveBackgroundColor={COLORS.GRAY_LIGHT}
+              inactiveTintColor={COLORS.BLACK}
+              activeTintColor={COLORS.WHITE}
+            />
+            <DrawerItem
               label={'About'}
               onPress={() => {
                 props.navigation.navigate(SCREENS.ABOUT);
@@ -95,6 +113,7 @@ const ProfileScreenWithDrawer = () => {
       }}>
       <Drawer.Screen name={SCREENS.PROFILE} component={ProfileScreen} />
       <Drawer.Screen name={SCREENS.ABOUT} component={AboutScreen} />
+      <Drawer.Screen name={SCREENS.SETTING} component={SettingScreen} />
     </Drawer.Navigator>
   );
 };

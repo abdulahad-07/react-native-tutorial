@@ -6,6 +6,7 @@ import StackNavigation from './src/navigation';
 import DarkTheme from './src/theme/DarkTheme';
 import LightTheme from './src/theme/LightTheme';
 import {AppContext} from './src/theme/AppContext';
+import i18n from './src/screens/language';
 
 const App = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
