@@ -1,12 +1,21 @@
 import {View, Text, FlatList, TouchableWithoutFeedback} from 'react-native';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {COLORS} from '../../constants';
+import {useTranslation} from 'react-i18next';
+import I from './languageConst';
+import {getCurrentLocale, setLocale} from '.';
 
 const LanguageScreen = () => {
+  const {t} = useTranslation();
+
   const locales = [
     {tag: 'en', name: 'English'},
     {tag: 'es', name: 'Spanish'},
   ];
+
+  useEffect(() => {
+    setSelected(locales.find(l => l.tag === getCurrentLocale()));
+  }, []);
 
   const [selected, setSelected] = useState(locales[0]);
 
@@ -19,6 +28,7 @@ const LanguageScreen = () => {
           return (
             <TouchableWithoutFeedback
               onPress={() => {
+                setLocale(item.tag);
                 setSelected(item);
               }}>
               <View
@@ -66,7 +76,7 @@ const LanguageScreen = () => {
       />
       <View style={{marginVertical: 50}}>
         <Text style={{textAlign: 'center', fontSize: 30, marginHorizontal: 10}}>
-          Hello, welcome to my YouTube channel.
+          {t(I.WELCOME)}
         </Text>
       </View>
     </View>
